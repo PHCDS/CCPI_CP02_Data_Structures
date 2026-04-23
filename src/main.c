@@ -40,9 +40,21 @@ int main() {
     printf("6 - Sair\n");
     printf("Digite a opcao: ");
     scanf("%d", &opcao);
+    
+switch (opcao) {
+    case 1:
+    printf("\n-- Inserir Notas --\n");
+    printf("Digite sua primeira nota: ");
+    scanf("%f", &n1);
+    printf("Digite sua segunda nota: ");
+    scanf("%f", &n2);
+    media = media_aritmetica(n1, n2);
+    printf("Notas salvas!\n");
+    break;
+    
 
  
-
+}
     
     return 0;
 }
