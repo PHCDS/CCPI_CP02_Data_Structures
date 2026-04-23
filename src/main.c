@@ -52,6 +52,11 @@ switch (opcao) {
     printf("Notas salvas!\n");
     break;
     
+    case 2:
+    printf("\n-- Calcular Media --\n");
+    media = media_aritmetica(n1, n2);
+    printf("Media: %.2f\n", media); 
+    break;
 
  
 }
