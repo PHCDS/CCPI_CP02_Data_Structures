@@ -44,25 +44,33 @@ int main() {
     
         switch (opcao) {
             case 1:
-            printf("\n-- Inserir Notas --\n");
-            printf("Digite sua primeira nota: ");
-            scanf("%f", &n1);
-            printf("Digite sua segunda nota: ");
-            scanf("%f", &n2);
-            media = media_aritmetica(n1, n2);
-            printf("Notas salvas!\n");
-            break;
+                printf("\n-- Inserir Notas --\n");
+                printf("Digite sua primeira nota: ");
+                scanf("%f", &n1);
+                printf("Digite sua segunda nota: ");
+                scanf("%f", &n2);
+                media = media_aritmetica(n1, n2);
+                printf("Notas salvas!\n");
+                break;
             
             case 2:
-            printf("\n-- Calcular Media --\n");
-            media = media_aritmetica(n1, n2);
-            printf("Media: %.2f\n", media); 
-            break;
+                printf("\n-- Calcular Media --\n");
+                media = media_aritmetica(n1, n2);
+                printf("Media: %.2f\n", media); 
+                break;
 
             case 3:
-            printf("\n-- Verificar Situacao --\n");
-            classificacao(media);
-            break;
+                printf("\n-- Verificar Situacao --\n");
+                classificacao(media);
+                break;
+
+            case 4:
+                printf("\n-- Resultado --\n");
+                printf("Nota 1: %.2f\n", n1);
+                printf("Nota 2: %.2f\n", n2);
+                printf("Media: %.2f\n", media);
+                classificacao(media);
+                break;
             
         
     }
