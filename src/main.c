@@ -32,38 +32,41 @@ void calcular_derivada() {
 int main() {
     int opcao;
     float n1, n2, media = 0;
-    printf("1 - Inserir notas\n");
-    printf("2 - Calcular media\n");
-    printf("3 - Verificar situacao\n");
-    printf("4 - Exibir resultado\n");
-    printf("5 - Calcular derivada\n");
-    printf("6 - Sair\n");
-    printf("Digite a opcao: ");
-    scanf("%d", &opcao);
+    do {
+        printf("1 - Inserir notas\n");
+        printf("2 - Calcular media\n");
+        printf("3 - Verificar situacao\n");
+        printf("4 - Exibir resultado\n");
+        printf("5 - Calcular derivada\n");
+        printf("6 - Sair\n");
+        printf("Digite a opcao: ");
+        scanf("%d", &opcao);
     
-switch (opcao) {
-    case 1:
-    printf("\n-- Inserir Notas --\n");
-    printf("Digite sua primeira nota: ");
-    scanf("%f", &n1);
-    printf("Digite sua segunda nota: ");
-    scanf("%f", &n2);
-    media = media_aritmetica(n1, n2);
-    printf("Notas salvas!\n");
-    break;
-    
-    case 2:
-    printf("\n-- Calcular Media --\n");
-    media = media_aritmetica(n1, n2);
-    printf("Media: %.2f\n", media); 
-    break;
+        switch (opcao) {
+            case 1:
+            printf("\n-- Inserir Notas --\n");
+            printf("Digite sua primeira nota: ");
+            scanf("%f", &n1);
+            printf("Digite sua segunda nota: ");
+            scanf("%f", &n2);
+            media = media_aritmetica(n1, n2);
+            printf("Notas salvas!\n");
+            break;
+            
+            case 2:
+            printf("\n-- Calcular Media --\n");
+            media = media_aritmetica(n1, n2);
+            printf("Media: %.2f\n", media); 
+            break;
 
-    case 3:
-    printf("\n-- Verificar Situacao --\n");
-    classificacao(media);
-    break;
- 
-}
-    
+            case 3:
+            printf("\n-- Verificar Situacao --\n");
+            classificacao(media);
+            break;
+            
+        
+    }
+        
+    } while (opcao != 6);
     return 0;
-}
+    }
