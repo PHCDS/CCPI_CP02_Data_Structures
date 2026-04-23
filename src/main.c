@@ -58,6 +58,10 @@ switch (opcao) {
     printf("Media: %.2f\n", media); 
     break;
 
+    case 3:
+    printf("\n-- Verificar Situacao --\n");
+    classificacao(media);
+    break;
  
 }
     
