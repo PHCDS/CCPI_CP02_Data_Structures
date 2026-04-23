@@ -79,10 +79,13 @@ int main() {
             case 6:
                 printf("\n saindo\n");
                 break;
-            
-        
-    }
+
+            default:
+                printf("Opcao invalida!\n");
+                break;  
+        }
         
     } while (opcao != 6);
+    
     return 0;
-    }
+}
