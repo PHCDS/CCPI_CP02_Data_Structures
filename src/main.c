@@ -71,6 +71,14 @@ int main() {
                 printf("Media: %.2f\n", media);
                 classificacao(media);
                 break;
+
+                case 5:
+                calcular_derivada();
+                break;
+            
+            case 6:
+                printf("\n saindo\n");
+                break;
             
         
     }
